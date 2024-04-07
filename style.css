@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 95vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    "header "
+    "content"
+    "sidebar"
+    "footer ";
+}
+
+header {
+  grid-area: header;
+  background: linear-gradient(to top, #cf9aff, #95c0ff);
+}
+
+main {
+  grid-area: content;
+  background: radial-gradient(circle, #95c0ff, #cf9aff);
+}
+
+aside {
+  grid-area: sidebar;
+  background: radial-gradient(circle, #95c0ff, #cf9aff);
+}
+
+footer {
+  grid-area: footer;
+  background: linear-gradient(to bottom, #cf9aff, #95c0ff);
+}
